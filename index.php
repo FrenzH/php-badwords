@@ -7,3 +7,11 @@ $lenght=strlen($paragraph);
 <?= $paragraph ?>
 <br />
 <?=  'paragraph lenght :' . $lenght ?>
+
+<?php
+ $paragraphCensured = str_replace($_GET['word'], '****',$paragraph );
+?>
+<br />
+<?= $paragraphCensured ?>
+<br />
+<?= 'paragraph lenght :' . strlen($paragraphCensured) ?>
